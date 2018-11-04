@@ -1,2 +1,2 @@
-require('../sass/style.scss');
-require('../sass/woocommerce.scss');
+const normalize = require('normalize.css')
+const styles = require('../scss/main.scss')

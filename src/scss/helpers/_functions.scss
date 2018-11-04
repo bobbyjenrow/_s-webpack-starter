@@ -1,0 +1,41 @@
+@function tints-hues($color){
+  $map: (
+    'base': $color,
+    'light': lighten($color, 0.1),
+    'dark': darken($color, 0.1),
+    'lighter': lighten($color, 0.2),
+    'darker': darken($color, 0.2),
+    'lightest': lighten($color, 0.3),
+    'darkest': darken($color, 0.3)
+  );
+  @return $map;
+};
+
+@function calculateRem($size,$base-font-size) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+};
+
+@function map-colors-to-pallete($map){
+  $pallete: ();
+  @each $key, $value in $map{
+    $colors: ();
+    $colors: map-merge($key: tints-hues($value));
+    $pallete: map-merge($pallete, $colors);
+  };
+  @return $pallete;
+};
+
+// Colors -- calls colors from $colors map (Optional from $text-colors)
+//     values: p,a,s,b,f / b,h,l,a
+@function _c($key, $map: $colors){
+  @return map-get($map, $key);
+}
+// Sizing Function -- returns size from sizing maps. Used in padding and margin
+@function _s($key){
+  @return map-get($spacing, $key);
+}
+// Border Radius Function
+@function _br($key){
+  @return map-get($border-radius, $key);
+}

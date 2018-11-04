@@ -57,9 +57,9 @@ module.exports = {
         use: [
           {loader: MiniCssExtractPlugin.loader},
           {loader: 'css-loader', options: {importLoaders: 1}},
-          {loader: 'import-glob-loader'},
-          {loader: 'postcss-loader', options: {sourcemap:true}},
-          {loader: 'sass-loader'}, // Enable For Sass
+          // {loader: 'import-glob-loader'},
+          {loader: 'postcss-loader'},
+          {loader: 'sass-loader', options: {includePaths: ['node_modules']}}, // Enable For Sass
         ]
       }
     ]

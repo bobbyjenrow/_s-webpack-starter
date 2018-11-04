@@ -1,0 +1,30 @@
+$text-color: black;
+$heading-color: black;
+
+
+$color-primary: rebeccapurple;
+$color-accent: tomato;
+$color-secondary: navy;
+$color-foreground: white;
+$color-background: white;
+
+$text-color-body: black;
+$text-color-heading: black;
+$text-color-link: rebeccapurple;
+$text-color-accent: green;
+
+
+$colors: (
+  p: $color-primary,      // Primary
+  a: $color-accent,       // Accent
+  s: $color-secondary,    // Secondary
+  f: $color-foreground,   // Foreground
+  b: $color-background    // Background
+);
+
+$text-colors: (
+  b: $text-color-body,     // Body
+  h: $text-color-heading,  // Headings
+  l: $text-color-link,     // Link
+  a: $text-color-accent    // Accent
+);

@@ -1,0 +1,36 @@
+$max-content-width: 100%;
+// Border Radius Options call with _br($key)
+$border-radius: (
+0:0rem,
+1:.125rem,
+2:.25rem,
+3:.5rem,
+4:1rem,
+5:100%,
+6:9999px);
+// Spacing Options -- call with _s($key);
+$spacing: (
+0:0rem,
+1:.25rem,
+2:.5rem,
+3:1rem,
+4:2rem,
+5:4rem,
+6:8rem,
+7:16rem );
+
+$gutter-spacing-default: _s(3); // Equals 1 rem
+
+// Call with mixin @include col($size) or col-nogutters($size);
+$grid-sizes: (
+half   : percentage(1/2),
+third  : percentage(1/3),
+quarter: percentage(1/4),
+fifth  : percentage(1/5),
+sixth  : percentage(1/6)
+);
+// Calls with mixin @include transition($speed)
+$transition-speeds: (
+fast: .3s,
+slow: .1s
+)

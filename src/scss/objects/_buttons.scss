@@ -1,0 +1,21 @@
+/*
+Buttons
+* As a best practice, we highly recommend using the `<button>` element whenever possible to ensure matching cross-browser rendering.
+* While button classes can be used on `<a>` and `<button>` elements, only `<button>` elements are supported within our nav and navbar components.
+* You may use `.active` on `<button>`s should you need to replicate the active state programmatically.
+Styleguide 1.7
+*/
+
+/*
+Options
+Use any of the available button classes to quickly create a styled button.
+Markup:
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+Styleguide 1.7.1
+*/

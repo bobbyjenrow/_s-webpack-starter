@@ -1,0 +1,32 @@
+html{
+  @include sgl-html();
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body {
+  @include sgl-body();
+  color: _c(b, $text-colors);
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+}
+
+h1, .t1{
+  @include sgl-heading(3);
+}
+h2, .t2{
+  @include sgl-heading(2);
+}
+h3, .t3{
+  @include sgl-heading(1);
+}
+h4, .s1, h5, .s2, h6, .s3{
+  @include sgl-heading(0);
+}
+
+p,.t0,ul,ol,pre,table,blockquote,code{
+  @include sgl-margins();
+}
